@@ -1,0 +1,17 @@
+name: CI Pipeline
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: echo "Hello Vikrant"
+
+      - run: echo "My First GitHub Actions Pipeline"
+
+      - run: echo "Pipeline Successful"
